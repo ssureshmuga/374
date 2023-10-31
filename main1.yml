@@ -1,0 +1,9 @@
+---
+- name: Creating users
+  hosts: all
+  collections:
+    - rhel.user
+  roles:
+    - rhel.user.newuser
+
+
