@@ -1,0 +1,6 @@
+---
+- name: motd role config
+  hosts: dev
+  roles:
+          - role: rhel.user.newuser
+

@@ -1,0 +1,9 @@
+---
+- name: motd role config
+  hosts: webservers
+  tasks:
+    - name: copy the content with banner
+      ansible.builtin.copy: 
+        content: "Sun set down in east"
+        dest: /etc/motd.d/banner
+
