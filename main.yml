@@ -1,6 +1,6 @@
 ---
 - name: motd role config
-  hosts: webservers
+  hosts: all
   tasks:
     - name: copy the content with banner
       ansible.builtin.copy: 
